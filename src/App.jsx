@@ -33,7 +33,7 @@ const App = () => {
               <Route path="/admin/submodules/new" element={<SubModuleForm />} />
               <Route path="/admin/submodules/edit/:id" element={<SubModuleForm />} />
               <Route path="/admin/dashboard" element={<div>Dashboard</div>} />
-              <Route path="/" element={<Navigate to="/admin/dashboard" />} />
+              <Route path="/" element={<Navigate to="/admin/modules" />} />
             </Route>
           </Route>
           

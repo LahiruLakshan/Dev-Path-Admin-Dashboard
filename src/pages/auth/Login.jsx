@@ -30,7 +30,7 @@ const Login = () => {
       const userDoc = await getDoc(doc(db, 'users', user.uid));
       if (userDoc.exists() && userDoc.data().type === 'Admin') {
         setUser(user);
-        navigate('/admin/dashboard');
+        navigate('/admin/modules');
       } else {
         throw new Error('Unauthorized access. Admin privileges required.');
       }
@@ -42,7 +42,7 @@ const Login = () => {
   };
 
   return (
-    <Container maxWidth="sm" display="flex">
+    <Container maxWidth="sm" sx={{direction: "column", display:"flex"}}>
       <Paper elevation={3} sx={{ p: 4, mt: 8 }}>
         <Typography variant="h4" align="center" gutterBottom>
           Admin Login

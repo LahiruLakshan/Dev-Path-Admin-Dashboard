@@ -89,7 +89,7 @@ const Signup = () => {
       setUser(userCredential.user);
 
       // 5. Redirect to admin dashboard
-      navigate('/admin/dashboard');
+      navigate('/admin/modules');
     } catch (err) {
       console.error('Signup error:', err);
       setError(err.message.replace('Firebase: ', ''));
