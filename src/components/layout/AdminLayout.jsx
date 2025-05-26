@@ -119,13 +119,7 @@ const AdminLayout = () => {
         
         {/* Main content */}
         <Box
-          sx={{
-            backgroundColor: theme.palette.background.paper,
-            borderRadius: 2,
-            boxShadow: theme.shadows[1],
-            p: 3,
-            minHeight: 'calc(100vh - 120px)'
-          }}
+          
         >
           <Outlet />
         </Box>
